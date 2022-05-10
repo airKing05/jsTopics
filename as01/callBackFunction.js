@@ -39,6 +39,10 @@ x(function y() {
 // closure along with event listener
 
 function attachEventListener() {
+
+
+
+    
     let count = 0;
     document.getElementById("clickMe")
         .addEventListener("click", function xyz() {
