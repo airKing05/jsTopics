@@ -35,7 +35,7 @@ function cb(){
 
 setTimeout(cb(), 0);     //  still it will wait until GEC not poped out from call stack
                          // it will useful when we need to differ the code 
-                         // ex- cb() is lesser importance then console.log("end")
+                         // example- if cb() is lesser importance then console.log("end")
                          //  or need cb() at the end of the page or any different forthcoming page
                          // setTimeout(cb(), 0) is used
  
