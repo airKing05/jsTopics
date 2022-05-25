@@ -1,4 +1,4 @@
-// ep 17
+// ep 18
 console.log("higher order function");
 
 //hoc a function who can take any other function as a argument 
