@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event Bubbling</title>
+  </head>
+  <body>
+      <div>
+          <h4>Event? each action in js who can perform any action or call any function called event</h4>
+          <h4>Example - onclick,onChange, mouseHover, keyDown, onHover, Onfocus etc... perform event bubbling</h4>
+          <h4>Event bubbling is like water bubbling, who's start from bottom </h4>
+          <h4>if event present inner div then mid don not have any event after it 
+              event is present in top div, so whenever it will get event from bottom to top event Bubbling will fire or happen. 
+          </h4>
+          <h4>How to stop bubbling? event.stopPropagation() will stop, from where it present to end top</h4>
+      </div>
+    <div onclick="topDiv()" style="background-color: red; padding: 20px;">
+      top div
+      <div onclick="midDiv()" style="background-color: yellow; padding: 20px;">
+        mid div
+        <div onclick="innerDiv()" style="background-color: green; padding: 20px;">
+          inner div
+        </div>
+      </div>
+    </div>
+    <script>
+      function topDiv() {
+        alert("top div called");
+      }
+      function midDiv() {
+          event.stopPropagation()  
+          // iske ke indar wale hi call honge bahr wale nahi
+        alert("mid div called");
+      }
+      function innerDiv() {
+        alert("inner div called");
+      }
+    </script>
+  </body>
+</html>
