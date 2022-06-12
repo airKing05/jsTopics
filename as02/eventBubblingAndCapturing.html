@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event Bubbling and Capturing</title>
+</head>
+<body>
+    <h4>event Bubbling and Capturing</h4>
+    <p>bubbling me niche se upper</p>
+    <p>capturing(trickling) me upper se niche </p>
+    <p>in case of bubbling; if licked in parent, parent>grandParent</p>
+    <p>in case of capturing; if licked in parent, grandParent>parent</p>
+    <p>in case of capturing; if licked in grandParent, grandParent</p>
+    <p>in case of capturing; if licked in child, grandParent>parent>child</p>
+
+
+
+    <div id="grandParent" style="border: 1px solid orange; width: 300px; padding: 30px;">
+        <div id="parent" style="border: 1px solid blue; width: 200px; padding: 30px;">
+            <div id="child" style="border: 1px solid black; width: 100px; padding: 30px;">
+
+            </div>
+        </div>
+    </div>
+    <script src="eventBubblingAndCapturing.js"></script>
+</body>
+</html>
