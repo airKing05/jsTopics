@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+</head>
+<body>
+    <div>
+        <h5>eventDelegation</h5>
+        <p>in eventDelegation we add event to child element, and it will use event bubbling 
+            <br>
+        there for we add event to parent element, and while clicking the child element event will be bubbled out to parent 
+        and callback function will fire.
+        </p>
+        <h6>example-1</h6>
+        <ul id="categories">
+            <li id="laptops">laptops</li>
+            <li id="cameras">cameras</li>
+            <li id="shoes">shoes</li>
+        </ul>
+
+        <h6>example-2</h6>
+        <div id="form">
+            <input type="text" id="name" data-uppercase>
+            <input type="number" id="mobile">
+            <input type="text" id="pan">
+        </div>
+    </div>
+    <script src="eventDelegation.js"></script>
+</body>
+</html>
