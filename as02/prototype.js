@@ -101,3 +101,14 @@ Function.prototype.myBind = function (){
 function func2(){
     // called like func2.myBind()
 }
+
+
+// variable prototype
+let aVariable = 'abc';
+aVariable.__proto__   
+//String { '', constructor: ƒ, anchor: ƒ, big: ƒ, blink: ƒ, … }
+// because variable value is string type
+String.prototype
+//String { '', constructor: ƒ, anchor: ƒ, big: ƒ, blink: ƒ, … }
+
+aVariable.__proto__ == String.prototype
