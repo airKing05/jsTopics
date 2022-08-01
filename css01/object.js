@@ -1,5 +1,3 @@
-const { Console } = require("console");
-
 console.log("this is object")
 
 // Defination: it is colletion of related data or releted function

@@ -1,6 +1,6 @@
 console.log("generator function")
 // generator are function, which could be stop while execution, can resume 
-// star could be atteched to function or generator function name *generator
+// star could be attached to function or generator function name *generator
 function* generator(){
    console.log("generator  function");
    yield 20;
@@ -64,7 +64,7 @@ function getID(){
     console.log(resultGenerateID.next())
     let newID = document.getElementById('newID');
     newID.innerText = `GFx${resultGenerateID.next().value}`;
-   // console.log(newID)
+    // console.log(newID)
 }
 
 
