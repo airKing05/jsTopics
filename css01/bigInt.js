@@ -16,7 +16,7 @@ console.log(x*y)
 console.log(x<y)
 
 // condition
-if(y){  // in y is zero, will not go inside 
+if(y){  // if y is zero, will not go inside 
     console.log(y)
 }
 
