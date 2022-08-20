@@ -4,26 +4,26 @@ console.log("closures question video");
 
 // call in other way
 
-function z(){
-    var b= 1000;
-    function x(str) {
-        function y() {
-            console.log(a, str ,b);   // y() forms a closure along this x() scope as wel as z() scope also
-        }
-        let a = 4;   // also form closure here with let as wel as var
-                     // if we did not have this line here y() search a with it's parent's lexical environment
-                     // witch is "a=10"
+// function z(){
+//     var b= 1000;
+//     function x(str) {
+//         function y() {
+//             console.log(a, str ,b);   // y() forms a closure along this x() scope as wel as z() scope also
+//         }
+//         let a = 4;   // also form closure here with let as wel as var
+//                      // if we did not have this line here y() search a with it's parent's lexical environment
+//                      // witch is "a=10"
 
-       return y;
-    }
-    let a = 10;      // conflicting the inner variable name here? y() forms a closure along z()
-                     // but want get this value because a=4 already presented in inner scope
-                     // console(a) is referring inner "a" witch inside to x()
-                     // also "a " not present here y() search a with it's grandparent's lexical environment
-                     // also not found here it show that a is not-de-find
-    return x;
-}
-let a = 100;          // even does not care here also;  
+//        return y;
+//     }
+//     let a = 10;      // conflicting the inner variable name here? y() forms a closure along z()
+//                      // but want get this value because a=4 already presented in inner scope
+//                      // console(a) is referring inner "a" witch inside to x()
+//                      // also "a " not present here y() search a with it's grandparent's lexical environment
+//                      // also not found here it show that a is not-de-find
+//     return x;
+// }
+// let a = 100;          // even does not care here also;  
 // var close = z()("hello")()
 // var close = z()("hello world!");
 // close();
@@ -61,14 +61,15 @@ function CounterX(){
         console.log(count);
     };
     this.decrementCont =function(){
-        count++;
+        count--;
         console.log(count);
     };
 };
 
 // var counterX1 = new CounterX(); // this is way of creating the constructor
-// counterX1().incrementCont();
-// counterX1().decrementCont();
+// counterX1.incrementCont();
+// counterX1.incrementCont();
+// counterX1.decrementCont();
 
 
 //-------------------------------------------------------

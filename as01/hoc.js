@@ -1,6 +1,7 @@
 // ep 18
 console.log("higher order function");
 
+//a function how's oprate any other function  ---
 //hoc a function who can take any other function as a argument 
 // or return function from it or both
 

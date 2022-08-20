@@ -11,7 +11,7 @@ var aa = 10;
     var aa = 100;
     console.log(aa)
 }
-console.log(aa)
+console.log("aa", aa)
 
 let bb = 10;
 {

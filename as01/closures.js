@@ -7,6 +7,7 @@ console.log("closures video");
 //         console.log(a);   // is referring to the reference of 'a' 
 //                            // function remember the memory location of a
 //     }
+//     //var a = 100
 //     y();
 //     var a = 10;           // her a value shadowed previous
     
@@ -43,6 +44,7 @@ console.log("closures video");
 //     console.log("hello")
 // };
 // abc();
+
 // remove it from its wrong here i is declared with var keyword so whenever the loop itrate the value of i is showdding the previous value
 // when function run first time make a copy of function attach the time to it and get a reference of i
 // there for  5 function has been created with timer attached to them and  make same reference of i 
@@ -84,7 +86,7 @@ console.log("closures video");
 
 
 function abc (){
-    for(let i = 1; i<=5; i++){ 
+    for(var i = 1; i<=5; i++){ 
         function close(j){
             setTimeout(function(){
                 console.log(j)
@@ -94,7 +96,7 @@ function abc (){
     }
     console.log("hello")
 };
-abc();
+abc();   
 
 
 // creating new copy of i created by close function

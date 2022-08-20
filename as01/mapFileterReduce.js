@@ -1,19 +1,19 @@
 // ep 19
 console.log("map filter and reduce method");
 
-// map method is use to transform a array into new form 
+// map method is use to transform a array into new form
 // it will return new array
 
 const arr = [5, 3, 6, 2, 7, 15, 16];
 
-// find binary 
+// find binary
 function binary(i) {
     return i.toString(2)
 }
 const binaryArr = arr.map(binary);
 console.log("binaryArr map result", binaryArr)
 
-// filter method is use to filter out some element form an array  
+// filter method is use to filter out some element form an array
 // it will return new array
 // usage - odd/even, grater/less then, prime
 
@@ -25,18 +25,18 @@ const graterThen5Arr = arr.filter(graterThen5);
 console.log("graterThen5 filter result", graterThen5Arr)
 
 
-// reduce method return single value 
+// reduce method return single value
 // it does not change original array
 // usage - sum, max or accumulate arr
 
 // find sum
 function sum(acc, curr) {
-    // acc= accumulate in array 
+    // acc= accumulate in array
     // curr = current vale of array or like arr[i]
     return acc = acc + curr
 }
 const sumReduce = arr.reduce(sum, 0);
-// reduce take two argument one function and other one is 
+// reduce take two argument one function and other one is
 // initial value of accumulate
 console.log("sumReduce reduce method result", sumReduce)
 
@@ -87,11 +87,14 @@ console.log(getName)
 
 // count total number of people according to their age
 // {22: 1, 25: 2, 28: 1}
-// will use reduce here because we want to reduce our list in to a 
-// particular value which is an object 
+// will use reduce here because we want to reduce our list in to a
+// particular value which is an object
 
 const totalNumberOfUserAccordintToTheirAge = user.reduce((acc, curr) => {
+
+
     if (acc[curr.age]) {
+        //console.log(acc[curr.age])
         // the partculer age person already exist in the object
         acc[curr.age] = ++acc[curr.age];
     } else {

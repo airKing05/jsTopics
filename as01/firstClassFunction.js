@@ -18,7 +18,7 @@ expression();
 
 // anonymous function
 var anonymousFunction = function (){
-    console.log("we an not use anonymous function directly")
+    console.log("we can not use anonymous function directly")
 }
 
 
