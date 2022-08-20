@@ -7,7 +7,7 @@ console.log("Nullish Coalescing Operator in")
 
 let user = {
     student:{
-        name: "",
+        name: "", // undefined, null
         age: 0
     }
 }
