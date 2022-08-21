@@ -26,7 +26,7 @@ setTimeout(() => {
 }, 2000);
 }
 //getData();
-//createData({name: "vishal", work: "student"}); // iska time get se come hoga to newdata bhi dome me show hoga
+//createData({name: "vishal", work: "student"}); // iska time get se come hoga to newdata bhi dom me show hoga
 
 
 // callback
