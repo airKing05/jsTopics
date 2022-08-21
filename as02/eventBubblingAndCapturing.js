@@ -1,4 +1,6 @@
 console.log("this even bubbling")
+
+
 document.querySelector('#grandParent')
     .addEventListener('click', () => {
         console.log("grand parent clicked")
@@ -20,7 +22,7 @@ document.querySelector('#child')
         e.stopPropagation()
     }, true) // capturing, //bubbling, //capturing
 
-// top me capturing hai to phle capturing cycle complete hogi git bubbling wala callback call hoga
+// top me capturing hai to phle capturing cycle complete hogi get bubbling wala callback call hoga
 // if top hi capturing ho or last dono bubbling hoto, phle capturung, second wale ko check krega ydi capturing nahi hai to aage wale jake usko check krega, isme bhi ydi false hai to phle child hi call hoga yha se event bubbling ki cycle start ho jayegi
 // third case me parent>child>grandParent
 // 4th case me child>parent>grandParent

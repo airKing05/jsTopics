@@ -3,6 +3,7 @@ console.log("curring by bind and closer");
 
 // curring by bind method
 function multy(x, y) {
+   // console.log(x,y)
     return x * y;
 };
 
@@ -19,6 +20,7 @@ console.log("multyBy3", resultMultyBy3)
 
 function multyCloser(x) {
     return function (y) {
+        // console.log(x,y)
         return x * y;
     }
 };

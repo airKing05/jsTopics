@@ -13,7 +13,7 @@ finalName('he is good boy by noraml bind')
 // every function can access bind method 
 // so for it we use prototype finalName2()
 Function.prototype.myBind = function(...args){
-    // this -> getFullName, we myBind called 'this' will point to the 'fetFullName'
+    // this -> getFullName, we myBind called 'this' will point to the 'getFullName'
     // store this into variable
     let obj = this;
     // bind method return any other function, so
