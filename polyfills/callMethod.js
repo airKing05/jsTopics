@@ -13,7 +13,7 @@ getName.call(user, "Bundi", "Rajasthan");
 
 Function.prototype.myCall = function(context, ...args){
     // context is user object 
-    context.func = this
+    context.func = this // this is representing to the getName function
     //console.log(context) // func will be there in context now
     // we do not need to pass context into function
     context.func(...args)

@@ -28,11 +28,9 @@ function *generator1() {
     yield y;
     console.log("this console will execute after the last execution, just before { value: undefined, done: true }");
 };
-// it will return generator object => Object [Generator] {}
-let result1 = generator1();
-// to resolve .next() , done: false means not completed=>   { value: 20, done: false }
 
-  // { value: 'this is first yield', done: false }
+let result1 = generator1();
+// { value: 'this is first yield', done: false }
 console.log(result1.next())  // { value: 5, done: false }
 console.log(result1.next())   // { value: { name: 'anilraj' }, done: false }
 console.log(result1.next())   // { value: undefined, done: true }

@@ -1,22 +1,27 @@
 // polyfill for bind method
 
 
-let user = {
-    name: 'anilraj',
-    age: 25
-};
-
-let getDetails = function(city, state, country){
-    console.log("name: " + this.name + " age: " + this.age + " city:" + city + " state: " + state)
-    // + " state: " + state + " country: ", country
-}
-getDetails.call(user, "Bundi");
-
-Function.prototype.myCall = function(context, args){
-   context.func = this;
-   context.func(...args)
+const obj = {
+    name: 'anil',
+    age: '25'
 }
 
-getDetails.myCall(user, ["Bundi", "Raj"])
+function getName(city, state){
+   return `${this.name} : ${this.age}: ${city}, ${state}`
+}
 
+const result = getName.bind(obj, "Bundi" );
+//console.log(result("Rajasthan"))
 
+Function.prototype.myBind = function(...args){
+    let func  =this
+    return function(args2){
+        let object = args[0];
+        let reamingArg = args.splice(1);
+        console.log(reamingArg)
+        return func.call(object, ...reamingArg, args2)
+    }
+}
+
+const result1 = getName.myBind(obj , "Bundi");
+console.log(result1("Rajasthan"))

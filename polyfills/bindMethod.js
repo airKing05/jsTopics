@@ -12,7 +12,7 @@ myName("India");
 
 
 // polyfill: myBind
-//some how we need to add our myBind to window object so very function can easily access myBind method (add to prototype of function)
+//some how we need to add our myBind to window object so every function can easily access myBind method (add to prototype of function)
 // we also need to access user and other parameters as a argument to my myBind method (get as ...args)
 Function.prototype.myBind = function(...args){
     // now to execute the getName we need it inside the myBind method(this is pointing to the getName)
